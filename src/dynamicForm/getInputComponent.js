@@ -4,9 +4,12 @@ import {
   SelectInput,
   CheckboxGroupInput,
   ImageInput,
+  SelectArrayInput,
   ImageField
 } from "react-admin";
 import RichTextInput from "ra-input-rich-text";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import Chip from "./chipInput";
 
 export default (parameter, definition) => {
   switch (parameter.type) {
@@ -15,6 +18,10 @@ export default (parameter, definition) => {
     case "url":
       return <TextInput source={parameter.name} type="url" />;
     case "select":
+      return (
+        <SelectInput source={parameter.name} choices={parameter.choices} />
+      );
+    case "selectArray":
       return (
         <SelectInput source={parameter.name} choices={parameter.choices} />
       );

@@ -9,6 +9,16 @@ export default [
       { name: "title", type: "text" },
       { name: "content", type: "richText" },
       {
+        name: "keywords",
+        type: "selectArray",
+        choices: [
+          { name: "option 1", id: 0 },
+          { name: "option 2", id: 1 },
+          { name: "option 3", id: 2 }
+        ]
+      },
+
+      {
         name: "option",
         type: "select",
         choices: [
