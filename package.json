@@ -1,0 +1,24 @@
+{
+  "name": "react-admin-dynamic-form",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "ra-data-fakerest": "2.1.3",
+    "react": "16.3.2",
+    "react-admin": "2.2.0",
+    "react-dnd": "5.0.0",
+    "react-dnd-html5-backend": "5.0.1",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "reset.css": "2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
